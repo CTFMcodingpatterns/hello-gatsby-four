@@ -48,11 +48,13 @@ export default function Layout({ children }) {
       </Link>
       <Link
         to={`/about/`}
-        css={css`
-          float: right;
-        `}
-      >
-        About
+        css={css`float: right;`}>
+        | About
+      </Link>
+      <Link 
+        to={`/my-files/`} 
+        css={css`float: right;`}>
+        MyFiles | 
       </Link>
       {children}
     </div>
